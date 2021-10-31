@@ -11,9 +11,8 @@
 
 <body>
 	<script language="javascript">
-	$.getJSON( "https://www.hostinghosting.42web.io/songs.json").done 
-		  (function( data ) {
-				console.log("hi");
+	$.get( "http://www.hostinghosting.42web.io/songs.json", 
+		  function( data ) {
 			str = JSON.stringify(data);
 			document.write(str +"<br/>");
 		
