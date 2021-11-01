@@ -30,7 +30,7 @@
 	<div class = "chosensongs" id = "chosensongs">
 		
 	</div>
-	
+	<br>
 	<div class = "JSONstring" id = "JSONstring">
 		
 	</div>
@@ -65,9 +65,6 @@
 		for (var i = 0; i < 10; i++){
 			  if (val == JSONstr[i]["Genre(s)"]) {
 					filteredSongs = filteredSongs + JSONstr[i]["Song Name"] + "<br/>";
-					filteredSongs = filteredSongs + "Year Released: " + JSONstr[i]["Year Released"] + "<br/>";
-					filteredSongs = filteredSongs + "Artist(s): " + JSONstr[i]["Artist(s)"] + "<br/>";
-					filteredSongs = filteredSongs + "Genre(s): " + JSONstr[i]["Genre(s)"] + "<br/><br/>";
 				}
 		}
 		document.getElementById("chosensongs").innerHTML = filteredSongs;
